@@ -1,0 +1,6 @@
+sqrt(2) = 1.4142135623731
+sqrt(2)*sqrt(2) = 2 (should be equal 2)
+exp(pi) = 23.1406926327793
+exp(pi)*exp(-pi) = 1 (should be equal 1)
+pi^(e) = 22.459157718361
+pi^(e)*pi^(-e) = 1 (should be equal 1)
