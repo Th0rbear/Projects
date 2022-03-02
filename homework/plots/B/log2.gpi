@@ -1,0 +1,8 @@
+set terminal png 
+set output 'lngamma.pyxplot.png' 
+set xlabel 'x' 
+set ylabel 'y' 
+set title 'lngamma function' 
+set key right top 
+plot 'lngamma.data.txt' index 0 using 1:2 with lines col 2 title 'lngamma' 
+

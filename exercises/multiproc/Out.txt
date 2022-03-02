@@ -1,0 +1,9 @@
+N=2E+08
+harm: summing from 1 to 100000000
+harm: summing from 100000000 to 200000001
+harm: summing from 1 to 100000000 gives 18.9978964038526
+harm: summing from 100000000 to 200000001 gives 0.693147188059741
+harm sum from 1 to 200000000 is equal 19.6910435919123
+real 0.74
+user 1.36
+sys 0.00
