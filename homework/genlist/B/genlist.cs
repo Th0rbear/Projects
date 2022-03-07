@@ -17,9 +17,10 @@ public class genlist<T>{
 		data[size]=item;
 		size++;
 	}
-	//method that removes element number "i".
+	//method that removes element number "i". A test of the remove element method can be seen in the test directory
+	//Furthermore comments are added there for the code.
 	public void removeItem(int i){
-		T[] newdata = new T[size-1];
+		T[] newdata = new T[data.Length-1];
 		int j=0;
 		int k=0;
 		while (j < data.Length) {
@@ -29,9 +30,10 @@ public class genlist<T>{
 			}
 			j++;
 		}
+		capacity--;
+		size--;
 		data = newdata;
-		if(data.Length<i || i<0) 
-			throw new ArgumentException("Index is out of range", nameof(i));
+		if(data.Length<i || i<0) throw new ArgumentException("Index is out of range", nameof(i));
 
 	}	
 }

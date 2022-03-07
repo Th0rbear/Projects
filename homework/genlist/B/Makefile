@@ -1,4 +1,4 @@
-all: out.data out.test.data
+all: out.data
 	cat $^
 
 out.data: main.exe input.data Makefile
@@ -8,9 +8,6 @@ out.data: main.exe input.data Makefile
 	cat input.data >> $@
 	echo '\n output: regualar table:' >> $@
 	mono main.exe < input.data >> $@
-
-out.test.data: main.exe
-	mono main.exe > out.test.data
 
 main.exe: main.cs genlist.dll
 	mcs main.cs -target:exe -reference:genlist.dll

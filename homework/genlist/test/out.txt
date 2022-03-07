@@ -1,0 +1,45 @@
+The list before removing an element:
+index 0 with value 2
+index 1 with value 5
+index 2 with value 7
+index 3 with value 8
+index 4 with value 0
+index 4 with value 0
+index 4 with value 0
+index 4 with value 0
+The list after removing the last element:
+index 0 with value 2
+index 1 with value 5
+index 2 with value 7
+index 3 with value 0
+index 3 with value 0
+index 3 with value 0
+index 3 with value 0
+The list after adding an item:
+index 0 with value 2
+index 1 with value 5
+index 2 with value 7
+index 3 with value 1
+index 4 with value 0
+index 4 with value 0
+index 4 with value 0
+The list after removing an item again:
+index 0 with value 5
+index 1 with value 7
+index 2 with value 1
+index 3 with value 0
+index 3 with value 0
+index 3 with value 0
+--------------------
+index 0 with value 5
+index 1 with value 7
+index 2 with value 1
+index 3 with value 3
+index 4 with value 4
+index 5 with value 9
+index 6 with value 10
+index 7 with value 0
+index 7 with value 0
+index 7 with value 0
+index 7 with value 0
+index 7 with value 0

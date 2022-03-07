@@ -20,13 +20,5 @@ public class main{
 			foreach(var number in numbers) Write($"{number:e} ");
 			WriteLine();
 		}
-		genlist<int> intlist = new genlist<int>();
-		intlist.push(2);
-		intlist.push(5);
-		intlist.push(7);
-		intlist.push(8);
-		for(int i=0; i<intlist.data.Length; i++)
-			WriteLine($"index {Array.IndexOf(intlist.data, intlist.data[i])} has value {intlist.data[i]}");
-		intlist.removeItem(1);
 	}
 }
