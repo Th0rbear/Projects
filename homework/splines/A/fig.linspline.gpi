@@ -1,0 +1,11 @@
+set terminal png
+set output "Fig.linspline.png"
+set tics out
+set key below
+set grid
+set title "Linear interpolation of sine"
+plot \
+	"sin.data.txt" index 0 using 1:2 with points pointtype 17 col 1 title "tabulated values for $\sin(x)$ ",\
+	"out.linspline.txt" index 0 using 1:2 with lines col 2 title "Linear interpolation",\
+	"out.linspline.txt" index 0 using 1:3 with lines col 3 title "integ. interp.: $-\cos(x)$"
+	
