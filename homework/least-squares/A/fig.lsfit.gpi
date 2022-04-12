@@ -1,0 +1,20 @@
+set terminal png
+set output "Fig.lsfit.png"
+set multiplot
+set width 8
+set tics out
+set key top right
+set grid
+set xlabel "Time [days]"
+set ylabel "Activity [arb. units]"
+set title "Ra-224 radioactive decay linear"
+plot \
+	[0:15.2] "out.txt" index 1 using 1:2:3 with yerrorbars pt 17 col 2 title "data",\
+	"out.txt" index 2 using 1:2 with lines title "linear fit"
+set origin 10,0
+
+set title "Ra-224 radioactive decay exponential"
+plot \
+	"out.txt" index 0 using 1:2:3 with yerrorbars pt 17 col 2 title "data",\
+	"out.txt" index 2 using 1:3 with lines title "exponential fit"
+set origin -10,0

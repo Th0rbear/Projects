@@ -1,0 +1,64 @@
+
+ random symmetric matrix A:
+      9.47      0.621        2.8       1.79 
+     0.621       8.35       8.78       3.52 
+       2.8       8.78       7.97       7.99 
+      1.79       3.52       7.99       2.62 
+number of sweeps: 1
+number of sweeps: 2
+number of sweeps: 3
+number of sweeps: 4
+number of sweeps: 5
+number of sweeps: 6
+
+ A is diagonalized:
+     -3.85   1.32e-23   2.08e-11  -2.98e-14 
+  6.57e-16       1.82  -3.41e-14   9.12e-22 
+  2.08e-11  -3.32e-14          9  -1.06e-22 
+  -2.9e-14  -5.09e-16   8.74e-16       21.4 
+
+ The vector e with A's eigenvalues and matrix V consisting of eigenvectors for A:
+
+ e:     -3.85       1.82          9       21.4 
+
+ V:
+   -0.0394      0.193     -0.949      0.247 
+    -0.295      0.705      0.304      0.569 
+     0.681     -0.291     0.0858      0.667 
+    -0.669     -0.618    0.00938      0.413 
+
+ V^T*A*V should give D:
+     -3.85  -2.22e-16   2.08e-11  -2.42e-14 
+ -2.22e-16       1.82  -3.34e-14   4.66e-15 
+  2.08e-11  -3.33e-14          9  -1.37e-15 
+  -2.4e-14   5.33e-15  -1.11e-15       21.4 
+
+ test passed
+
+ V*D*V^T should give A:
+      9.47      0.621        2.8       1.79 
+     0.621       8.35       8.78       3.52 
+       2.8       8.78       7.97       7.99 
+      1.79       3.52       7.99       2.62 
+
+ test passed
+
+ V^T*V and V*V^T should give the identity matrix I:
+
+ V^T*V:
+         1  -1.67e-16  -2.08e-17      5e-16 
+ -1.67e-16          1   1.39e-16   1.67e-16 
+ -2.08e-17   1.39e-16          1  -2.95e-17 
+     5e-16   1.67e-16  -2.95e-17          1 
+
+ V*V^T:
+         1  -1.67e-16   1.11e-16   6.94e-17 
+ -1.67e-16          1          0   1.11e-16 
+  1.11e-16          0          1  -5.55e-16 
+  6.94e-17   1.11e-16  -5.55e-16          1 
+
+ test passed
+
+ 0 0.5
+
+ 0.384900179459751 0.384900179459751
