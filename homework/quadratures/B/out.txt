@@ -1,0 +1,13 @@
+evaluation of integral 1/Sqrt(x):
+
+Ordinary:
+result = 1.99996150007805	#calls = 8572
+Transf.:		
+result = 1.99999201046432	#calls = 16
+
+evaluation of integral ln(x)/Sqrt(x):
+
+Ordinary:         
+result = -3.99991705899915	#calls = 8604
+Transf.:            
+result = -3.99987385646141	#calls = 96

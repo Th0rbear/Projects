@@ -1,0 +1,14 @@
+Evaluating integrals	of the following functions from 0 to 1: 
+ Sqrt(x) 
+ 1/Sqrt(x)
+ 4*Sqrt(1-x^2) 
+ ln(x)/Sqrt(x)
+Should give 2/3, 2, π and -4
+
+ 0.666666970048681
+
+ 1.99999994818932
+
+ 3.14159283639132
+
+ -3.99999997309636

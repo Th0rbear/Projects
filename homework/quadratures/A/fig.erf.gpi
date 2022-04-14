@@ -1,0 +1,11 @@
+set terminal png
+set output "Fig.erf.png"
+set tics out
+set xlabel "$x$"
+set ylabel "$y$"
+set key left
+set grid
+set title "Error function reproduced by numerical integrator"
+plot\ 
+	"erf.txt" with lines col 3 title "$\mathrm{erf}(x)$",\
+	"erf.tab.txt" with points pointtype 1 pointsize 1 title "tabulated values"
