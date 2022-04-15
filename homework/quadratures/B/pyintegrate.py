@@ -16,5 +16,7 @@ b = 1
 res1, abserr1, infodict1 = quad(invSqrt, a, b, full_output=1, epsabs=δ, epsrel=ε)
 res2, abserr2, infodict2 = quad(logInvSqrt, a, b, full_output=1, epsabs=δ, epsrel=ε)
 
-print("1/Sqrt(x) python #calls = ", infodict1["neval"])
-print("log(x)/Sqrt(x) python #calls = ", infodict2["neval"])
+print("\nPython evaluation of 1/Sqrt(x):")
+print("\nresult = ", res1, "     #calls = ", infodict1["neval"])
+print("\nPython evaluation of ln(x)/Sqrt(x):")
+print("\nresult = ", res2, "     #calls = ", infodict2["neval"])

@@ -11,3 +11,11 @@ Ordinary:
 result = -3.99991705899915	#calls = 8604
 Transf.:            
 result = -3.99987385646141	#calls = 96
+
+Python evaluation of 1/Sqrt(x):
+
+result =  1.9999999999999984      #calls =  231
+
+Python evaluation of ln(x)/Sqrt(x):
+
+result =  -4.000000000000085      #calls =  315
