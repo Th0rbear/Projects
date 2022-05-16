@@ -1,0 +1,21 @@
+set terminal png
+set output "Fig.hydrogen.png"
+set multiplot
+set width 8
+set tics out
+set key outside
+set grid
+set title "Solution to SE with $r_{\textup{max}} = 8$"
+set xlabel "r [Bohr radii, a]"
+set ylabel "non-normalized $R_{\textup{1 0}}(r)$ [arb. units]"
+plot \
+	"hydrogen.txt" index 0 using 1:2 with lines col 2 title "ODE-solver",\
+	"hydrogen.txt" index 0 using 1:3 with lines lt 2 col 3 title "Analytical: $r \cdot e^{-r}$"
+
+set origin 0,-8
+set title "ODE-solver vs. analytical"
+set xlabel "r [Bohr radii, a]"
+set ylabel "non-normalized $R_{\textup{1 0}}(r)$ [arb. units]"
+plot \
+	"hydrogen.txt" index 0 using 1:3 with lines col 3 title "Analytical: $r \cdot e^{-r}$",\
+	"hydrogen.txt" index 0 using 1:4 with lines lt 2 col 4 title "ODE-solver with $\epsilon_0 = -0.5$ \& $f_0 = r \cdot e^{-r}$" 

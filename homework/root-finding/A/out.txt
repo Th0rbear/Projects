@@ -1,0 +1,19 @@
+
+Determining extremums of f(x) = x^3+3x^2-x-3
+Thus roots of its gradient - f'(x) = 3x^2+6x-1 - are determined
+There should be two extremums, the first is a maximum and the second is a minimum
+
+The minimum is found at:	0.154699743268173
+The analytical result is:	0.1547
+
+Determining extremums of f(x,y) = x^2+y^2+1
+Its gradient is Nabla(f(x,y)) = (2x, 2y)
+
+The roots of the gradient of f are:	1.90734862570707E-07	1.90734862570707E-07
+The analytical result is:		0			0
+
+Determining extremums of f(x,y) = (1-x)^2+100(y-x^2)^2
+Its gradient is Nabla(f(x,y)) = (2*[200*x^3 - 200*y*x + x - 1], 200*[y - x^2])
+
+The roots of the gradient of f are:	0.999999930331161	0.999999859216237
+The analytical result is:		1			1

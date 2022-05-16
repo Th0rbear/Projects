@@ -1,0 +1,2 @@
+The groundstate energy for hydrogen is estimated to:	-0.500030905757752 Hartree
+It should be: 						-0.5 Hartree
