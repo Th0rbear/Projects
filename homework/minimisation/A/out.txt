@@ -1,0 +1,16 @@
+
+Finding minimum of f(x,y) = (1 - x)^2 + 100(y - x^2)^2
+The minimum found has the following coordinates:
+
+(0.999998314959142,0.999996743494644) with the algorithm running in 30 iterations
+With these coordinates the value of the function is f(x,y) = 4.1292571700135E-12
+
+The minimum should have the coordinates (1,1) where f(x,y) = 0
+
+Finding minimum of f(x,y) =  (x^2 + y - 11)^2 + (x + y^2 - 7)^2
+The minimum found has the following coordinates:
+
+(2.99999961115468,2.00000292258545) with the algorithm running in 11 iterations
+The value of the function is then f(x,y) = 1.28071541677678E-10
+
+Himmelblau's function has four identical local minima one them have the coordinates (3, 2) where f(x,y) = 0
