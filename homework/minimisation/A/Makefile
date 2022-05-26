@@ -11,7 +11,6 @@ LIBDIR = ~/repos/ppnm/exercises/matlib
 matlib.dll: \
 	$(LIBDIR)/matrix.cs \
 	$(LIBDIR)/vector.cs \
-	$(LIBDIR)/QRGSdecom.cs \
 	minim.cs
 	mcs -target:library -out:./$@ $^
 

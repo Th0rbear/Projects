@@ -1,0 +1,9 @@
+
+The best fit parameters for A, m and Γ is determined with the quasi-Newton minimization method:
+Scale factor A:	9.87624725159366
+Mass m: 	125.972187677942
+Width Γ: 	2.08633653015441
+
+The best fit parameters were found in 621 iterations
+
+The mass of 125.9 GeV/c^2 is pretty close to 125.3 +/- 0.6 GeV/c^2

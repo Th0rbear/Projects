@@ -1,0 +1,11 @@
+set terminal png
+set output "Fig.higgs.png"
+set tics out
+set grid
+set title "Higgs data fitted with Breit-Wigner function"
+set key outside
+set xlabel "Energy [GeV]"
+set ylabel "Cross-section $\sigma$(E) [arb. units]"
+plot\
+	"higgs.data.txt" index 0 with errorbars col 1 title "Higgs data points",\
+	"higgs.fit.txt" index 0 using 1:2 with lines col 2 title "Fit"

@@ -30,16 +30,16 @@ index 2 with value 1
 index 3 with value 0
 index 3 with value 0
 index 3 with value 0
---------------------
-index 0 with value 5
-index 1 with value 7
-index 2 with value 1
-index 3 with value 3
-index 4 with value 4
-index 5 with value 9
-index 6 with value 10
-index 7 with value 0
-index 7 with value 0
-index 7 with value 0
-index 7 with value 0
-index 7 with value 0
+4 elements are added to check that capacity is doubled:
+index 0 with value 5 list has size 7
+index 1 with value 7 list has size 7
+index 2 with value 1 list has size 7
+index 3 with value 3 list has size 7
+index 4 with value 4 list has size 7
+index 5 with value 9 list has size 7
+index 6 with value 10 list has size 7
+index 7 with value 0 list has size 7
+index 7 with value 0 list has size 7
+index 7 with value 0 list has size 7
+index 7 with value 0 list has size 7
+index 7 with value 0 list has size 7
