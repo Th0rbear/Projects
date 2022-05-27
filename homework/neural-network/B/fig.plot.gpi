@@ -1,0 +1,13 @@
+set terminal png
+set output "Fig.plot.png"
+set tics out
+set grid
+set title "Using an ANN to interpolate $g(x)=cos(5x-1) \cdot exp(-x^2)$"
+set key outside
+set xlabel "x"
+set ylabel "g(x)"
+plot\
+	"out.txt" index 0 using 1:2 with points col 1 title "tab. values",\
+	"out.txt" index 1 using 1:2 with lines col 3 title "interpolation",\
+	"out.txt" index 1 using 1:3 with lines col 4 title "derivative",\
+	"out.txt" index 1 using 1:4 with lines col 5 title "anti-derivative"
