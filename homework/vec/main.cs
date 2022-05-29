@@ -2,6 +2,7 @@ using static System.Console;
 
 class Test{
 	static void Main(){
+		WriteLine("\nPart A: testing overloaded mathematical operators for vectors\n");
 		vec w = new vec(); //should be a zero-vector
 		vec v1 = new vec(3, -2, 7);
 		vec v2 = new vec(-1, 4, 9);
@@ -24,6 +25,9 @@ class Test{
 		var c2 = 3*v1;
 	        c1.print("v1*3 = ");
 		c2.print("3*v1 = ");
+		Write("-----------------------------------------------------------------------\n");
+		WriteLine("Part B: testing implementation of dot product, vector-product, norm");
+		WriteLine("and toString method\n");
 		Write($"v1 dot w = {v1.dot(w)} (should be 0)\n");
 		Write($"v1 dot v1 = {v1.dot(v1)}\n");
 		Write($"v1 dot v2 = {v1.dot(v2)}\n");
@@ -39,6 +43,9 @@ class Test{
 		Write($"|v1| = {v1.norm()}\n");
 		//test ToString method
 		WriteLine(v1);
+		Write("-----------------------------------------------------------------------\n");
+		WriteLine("Part C: testing approx method to compare two vec's with absolute");
+		WriteLine("precision τ and relative precision ε\n");
 		vec e1 = new vec(1, 1, 1);
 		vec e2 = new vec(1+1e-9, 1+1e-9, 1+1e-9);
 		vec e3 = new vec(1+1e-9, 1+1e-9, 1.1);

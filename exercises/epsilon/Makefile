@@ -11,3 +11,6 @@ main.exe: main.cs epsilon.dll
 epsilon.dll: epsilon.cs
 	mcs epsilon.cs -target:library -out:epsilon.dll
 	#source code compiled and resulting bytecode is placed in library file epsilon.dll
+
+clean:
+	$(RM) *.exe *.dll *.txt

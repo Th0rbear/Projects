@@ -1,13 +1,15 @@
-my max int = 2147483647
-int.MaxValue = 2147483647
-my min int = -2147483648
-int.MinValue = -2147483648
-my min double = 2.22044604925031E-16
-should be about: 2.22044604925031E-16
-my min float = 1.192093E-07
-should be about: 1.19209289550781E-07
+my max int =    	2147483647
+int.MaxValue =  	2147483647
+my min int =    	-2147483648
+int.MinValue =  	-2147483648
+my min double = 	2.22044604925031E-16
+should be about:	2.22044604925031E-16
+my min float =  	1.192093E-07
+should be about:	1.19209289550781E-07
+
 sumA-1 = 0.000000e+000 should be 1.110223e-010
 sumB-1 = 1.110223e-010 should be 1.110223e-010
+
 for a=1.0 & b=1+1.0e-10 then approx should give true: True
-for a=1.0 & b=1+1.0e-9 then we hit 2nd condition in approx, and it should                      give true: True
+for a=1.0 & b=1+1.0e-9 then we hit 2nd condition in approx, and it should give true: True
 for a=1.0 & b=1.2 then approx should give false: False

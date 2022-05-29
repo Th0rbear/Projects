@@ -4,6 +4,7 @@ using static System.Console;
 using static System.Math;
 class main{
 	public static void Main() {
+		WriteLine("\nPart A:\n");
 		char[] delimiters = {' ', '\t', '\n'};
 		for(string line = ReadLine(); line != null; line = ReadLine()) {
 			var words = line.Split(delimiters, System.StringSplitOptions.RemoveEmptyEntries);

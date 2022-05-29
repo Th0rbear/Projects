@@ -3,10 +3,10 @@ all: out.data
 
 out.data: main.exe input.data
 	> $@
-	echo 'Exercise "genlist" part A: simple generic list' >> $@
-	echo '\n input: irregular table:' >> $@
+	echo '\nExercise "genlist" part A: simple generic list' >> $@
+	echo '\ninput: irregular table:' >> $@
 	cat input.data >> $@
-	echo '\n output: regualar table:' >> $@
+	echo '\noutput: regualar table:' >> $@
 	mono main.exe < input.data >> $@
 
 main.exe: main.cs genlist.dll

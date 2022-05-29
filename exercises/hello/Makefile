@@ -7,10 +7,10 @@ Out.txt : hello.exe                                              # out.txt depen
 	mono hello.exe > Out.txt                                 # run hello.exe, send output to out.txt
 
 hello.exe : hello.cs                                             # hello.exe depends on hello.cs
-	$(MCS) hello.cs -target:exe -out:hello.exe              # compile hello.cs into hello.exe
+	$(MCS) hello.cs -target:exe -out:hello.exe               # compile hello.cs into hello.exe
 
 .PHONEY:clean
 clean:                                                           # a phoney target, no dependencies
-	rm -f out.text hello.exe                                 # remove secondary files
+	rm -f *.txt *.exe                                 	 # remove secondary files
 test:
 	echo $(MCS)

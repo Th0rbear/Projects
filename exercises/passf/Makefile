@@ -9,3 +9,6 @@ main.exe: main.cs passf.dll
 
 passf.dll: passf.cs
 	mcs passf.cs -target:library -out:passf.dll
+
+clean:
+	$(RM) *.txt *.exe *.dll

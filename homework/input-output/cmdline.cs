@@ -4,6 +4,7 @@ using static System.Console;
 using static System.Math;
 class main {
 	public static void Main(string[] args) {
+		WriteLine("\nPart B:\n");
 		foreach(var arg in args) {
 			double x = double.Parse(arg);
 			WriteLine($"{x} {Sin(x)} {Cos(x)}");
