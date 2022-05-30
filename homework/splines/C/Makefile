@@ -14,4 +14,4 @@ cspline.dll: cspline.cs
 	mcs $< -target:library -out:$@
 
 clean:
-	$(RM) *.dll *.exe *.txt
+	$(RM) *.dll *.exe *.txt *.png

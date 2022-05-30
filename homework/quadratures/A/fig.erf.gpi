@@ -2,7 +2,7 @@ set terminal png
 set output "Fig.erf.png"
 set tics out
 set xlabel "$x$"
-set ylabel "$y$"
+set ylabel "erf(x)"
 set key left
 set grid
 set title "Error function reproduced by numerical integrator"

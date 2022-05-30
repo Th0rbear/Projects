@@ -184,3 +184,4 @@
 5.99999999999999 -0.0307936069916446 -0.0555555555555556
 
 
+The numerical energies converge toward the analytical values for smaller dr's, which is to be expected.

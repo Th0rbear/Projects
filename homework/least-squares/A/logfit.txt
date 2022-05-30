@@ -1,5 +1,6 @@
 Results from the ordinary least-squares fit by QR-decomposition: 
 
-Fit parameters: a = 4.92566442305989, λ = -0.169399648577641
-From the fit, the half-life of Ra-224 is estimated to: 4.09178641384403 days
-The table value is 3.63 days. Source: wikipedia.org/wiki/Isotopes_of_radium
+Fit parameters: a = 4.95112516950657, λ = -0.172070796448846
+From the fit, the half-life of Ra-224 is estimated to: 4.02826740426001 days
+The table value is 3.63 days, so the value from the fit is a bit of an over-
+estimation. Source: wikipedia.org/wiki/Isotopes_of_radium

@@ -16,4 +16,4 @@ set ylabel "Energy [Hartree]"
 set key top right
 plot [0:0.5][-1:-0.4]\
 	"convergence.txt" index 1 using 1:2 with points pt 3 col 2 title "Shooting method",\
-	"convergence.txt" index 1 using 1:3 with lines col 3 title "Groundstat energy"
+	"convergence.txt" index 1 using 1:3 with lines col 3 title "Groundstate energy"

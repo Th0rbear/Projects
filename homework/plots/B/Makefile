@@ -7,6 +7,8 @@ gamma.pyxplot.png: gamma.data.txt gamma.tab.txt Makefile
 	set xlabel 'x' \n\
 	set ylabel 'y' \n\
 	set title 'gamma function' \n\
+	set grid \n\
+	set tics out \n\
 	set key left top \n\
 	plot '$<' index 0 using 1:2 with lines col 2 title 'gamma',\
 	'gamma.tab.txt' with points pointtype 17 col 3 title 'tab' \n\
@@ -19,8 +21,11 @@ lngamma.pyxplot.png: lngamma.data.txt Makefile
 	set xlabel 'x' \n\
 	set ylabel 'y' \n\
 	set title 'lngamma function' \n\
+	set grid \n\
+	set tics out \n\
 	set key right top \n\
-	plot '$<' index 0 using 1:2 with lines col 2 title 'lngamma' \n\
+	plot '$<' index 0 using 1:2 with lines col 2 title 'lngamma',\
+	'lngamma.tab.txt' with points pointtype 17 col 3 title 'tab' \n\
 	"| tee log2.gpi | pyxplot
 
 lngamma.data.txt: lngamma.exe

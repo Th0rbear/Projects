@@ -1,5 +1,14 @@
-Results from the ordinary least-squares fit by QR-decomposition: 
 
-Fit parameters: a = 4.92566442305989, λ = -0.169399648577641
-From the fit, the half-life of Ra-224 is estimated to: 4.09178641384403 ± 1.17503262023767 days
+The fit is carried out but now as an extension the covariance-matrix is also cal-
+culated.
+The Fit parameters remain: a = 4.95112516950657 and λ = -0.172070796448846
+while the covariance matrix is given as:
+
+0.00100649364942056	-0.000107776542279021
+-0.000107776542279021	1.62343460840806E-05
+
+The uncertainty on λ is thus ± 0.004029186777016, and since the half-life is given as
+ln(2)/λ, the uncertainty in the half-life is |ln(2)/λ^2*δλ|.
+So from the fit, the half-life of Ra-224 is estimated to: 4.02826740426001 ± 0.094325371268646 days
+
 The table value is 3.63 ± 0.23 days. Source: wikipedia.org/wiki/Isotopes_of_radium

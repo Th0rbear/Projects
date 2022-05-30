@@ -1,8 +1,10 @@
 	set terminal png 
 	set output 'erf.pyxplot.png' 
 	set xlabel 'x' 
-	set ylabel 'y' 
+	set ylabel 'erf(x)' 
+	set grid 
+	set tics out 
 	set title 'error function' 
 	set key left top 
-	plot 'erf.data.txt' index 0 using 1:2 with lines title 'erf',	'erf.tab.txt' with points title 'tab' 
+	plot 'erf.data.txt' index 0 using 1:2 with lines col 2 title 'erf',	'erf.tab.txt' with points col 1 title 'tab' 
 	

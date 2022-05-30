@@ -3,6 +3,8 @@ set output 'gamma.pyxplot.png'
 set xlabel 'x' 
 set ylabel 'y' 
 set title 'gamma function' 
+set grid 
+set tics out 
 set key left top 
 plot 'gamma.data.txt' index 0 using 1:2 with lines col 2 title 'gamma','gamma.tab.txt' with points pointtype 17 col 3 title 'tab' 
 

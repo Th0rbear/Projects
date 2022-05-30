@@ -94,4 +94,4 @@
 30 -0.0553607663404411 -0.0555555555555556
 
 
-As expected the numerical energies converges towards the analytical values for large r's
+As expected the numerical energies converge towards the analytical values for large r's

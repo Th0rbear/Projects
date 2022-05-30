@@ -16,14 +16,19 @@ class main {
 			WriteLine($"{time[i]} {activity[i]} {activityErr[i]}");		
 		}
 		WriteLine("\n");
+		int n = activity.size;
+		vector lnActivity = new vector(n);
+		vector lnActivityErr = new vector(n);
 
 		//radioactive decay follows exponential law, i.e. y(t)=a*exp(-λ*t), but we would like to 
 		//adjust it so that it becomes linear by taking the logarithm: ln(y)=ln(a)-λ*t. 
 		//The uncertainties would then equally change as δln(y) = δy/y.
-		for(int i=0; i<activity.size; i++) {
-			activity[i] = Log(activity[i]);
-			activityErr[i] = activityErr[i]/activity[i];
-			WriteLine($"{time[i]} {activity[i]} {activityErr[i]}");
+		for(int i=0; i<n; i++) {
+			lnActivity[i] = Log(activity[i]); //made a mistake here: activity[i] = Log(activity[i]); this 
+							  //should be stored in a new vector, else the error is miscal-
+							  //culated in the next line of code
+			lnActivityErr[i] = activityErr[i]/activity[i];
+			WriteLine($"{time[i]} {lnActivity[i]} {lnActivityErr[i]}");
 		}
 		WriteLine("\n");
 
@@ -32,7 +37,7 @@ class main {
 		var fs = new Func<double, double>[] {z => 1.0, z => z};
 
 		//Making the fit
-		var c = lsquares.lsfit(fs, time, activity, activityErr);
+		var c = lsquares.lsfit(fs, time, lnActivity, lnActivityErr);
 		
 		double[] tArr = time;
 		double res = 0;
@@ -54,6 +59,7 @@ class main {
 		Error.WriteLine("Results from the ordinary least-squares fit by QR-decomposition: \n");
 		Error.WriteLine($"Fit parameters: a = {c[0]}, λ = {c[1]}");
 		Error.WriteLine($"From the fit, the half-life of Ra-224 is estimated to: {Log(2)/(-c[1])} days");
-		Error.WriteLine($"The table value is 3.63 days. Source: wikipedia.org/wiki/Isotopes_of_radium");
+		Error.WriteLine($"The table value is 3.63 days, so the value from the fit is a bit of an over-");
+		Error.WriteLine("estimation. Source: wikipedia.org/wiki/Isotopes_of_radium");
 	}
 }

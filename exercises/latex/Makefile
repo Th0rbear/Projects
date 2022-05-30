@@ -1,4 +1,4 @@
-all:ms.pdf expfun.pdf
+all: ms.pdf expfun.pdf
 
 ms.pdf: ms.tex
 	pdflatex $<
@@ -22,4 +22,4 @@ main.exe: main.cs sfuns.dll
 	mcs -t:library $(addprefix -r:,$(filter %.dll,$^)) $(filter %.cs,$^)
 
 clean: 
-	$(RM) *.dll *.exe out.sfuns.txt
+	$(RM) *.dll *.exe *.txt *.pdf

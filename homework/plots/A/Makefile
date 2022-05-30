@@ -3,11 +3,13 @@ erf.pyxplot.png: erf.data.txt erf.tab.txt Makefile
 		set terminal png \n\
 		set output '$@' \n\
 		set xlabel 'x' \n\
-		set ylabel 'y' \n\
+		set ylabel 'erf(x)' \n\
+		set grid \n\
+		set tics out \n\
 		set title 'error function' \n\
 		set key left top \n\
-		plot '$<' index 0 using 1:2 with lines title 'erf',\
-		'erf.tab.txt' with points title 'tab' \n\
+		plot '$<' index 0 using 1:2 with lines col 2 title 'erf',\
+		'erf.tab.txt' with points col 1 title 'tab' \n\
 		"| tee log.gpi | pyxplot	
 
 

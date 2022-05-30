@@ -4,6 +4,7 @@ set tics out
 set xlabel "$t$"
 set key bottom
 set title "oscillator"
+set grid
 set axis x2 atzero
 set x2format ""
 plot \

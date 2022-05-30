@@ -52,8 +52,5 @@ class main{
 		I.set_unity();
 		if(VTV.approx(I) && VVT.approx(I)) WriteLine("\n test passed");
 		else WriteLine("\n test failed");
-
-		WriteLine($"\n {1/2} {1/2.0}");
-		WriteLine($"\n {2/(3*Math.Sqrt(3))} {2.0/(3*Math.Sqrt(3))}");
 	}
 }

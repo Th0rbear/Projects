@@ -17,13 +17,17 @@ class main {
 		}
 		WriteLine("\n");
 
+		int n = activity.size;
+		vector lnActivity = new vector(n);
+		vector lnActivityErr = new vector(n);
+
 		//radioactive decay follows exponential law, i.e. y(t)=a*exp(-λ*t), but we would like to 
 		//adjust it so that it becomes linear by taking the logarithm: ln(y)=ln(a)-λ*t. 
 		//The uncertainties would then equally change as δln(y) = δy/y.
-		for(int i=0; i<activity.size; i++) {
-			activity[i] = Log(activity[i]);
-			activityErr[i] = activityErr[i]/activity[i];
-			WriteLine($"{time[i]} {activity[i]} {activityErr[i]}");
+		for(int i=0; i<n; i++) {
+			lnActivity[i] = Log(activity[i]);
+			lnActivityErr[i] = activityErr[i]/activity[i];
+			WriteLine($"{time[i]} {lnActivity[i]} {lnActivityErr[i]}");
 		}
 		WriteLine("\n");
 
@@ -32,14 +36,10 @@ class main {
 		var fs = new Func<double, double>[] {z => 1.0, z => z};
 
 		//Making the fit
-		//var c = lsquares.lsfit(fs, time, activity, activityErr).Item1;
-		//var Σ = lsquares.lsfit(fs, time, activity, activityErr).Item2;
-		(vector c, matrix Σ) = lsquares.lsfit(fs, time, activity, activityErr);
+		(vector c, matrix Σ) = lsquares.lsfit(fs, time, lnActivity, lnActivityErr);
 		
 		double[] tArr = time;
-		double res = 0; 
-		double maxRes = 0;  
-		double minRes = 0;
+		double res = 0, maxRes = 0, minRes = 0;
 		for(double t=0; t<=tArr.Max(); t+=1.0/5) {
 			res = 0;
 			maxRes = 0; 
@@ -49,7 +49,6 @@ class main {
 				maxRes += (c[k] + Sqrt(Σ[k,k]))*fs[k](t);
 				minRes += (c[k] - Sqrt(Σ[k,k]))*fs[k](t);
 			}
-			//res = res;
 			WriteLine($"{t} {res} {maxRes} {minRes}");
 		}
 		WriteLine("\n");

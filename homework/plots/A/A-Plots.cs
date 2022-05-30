@@ -14,7 +14,7 @@ class main {
 	}
 
 	public static void Main() {
-		for(double x=-1; x<=1; x+=1.0/8) {
+		for(double x=-3; x<=3; x+=1.0/16) {
 			WriteLine($"{x} {erf(x)}");
 
 		}

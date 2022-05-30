@@ -3,14 +3,14 @@ Calculating the two dimensional integral of f(x,y)=2*x*y*sin(y)*[(1+x^4)*(1+(cos
 from 0 to π with respect to x and y:
 The integral should give: 3.62663, according to Wolfram
 
-1000000		result = 3.62735716679952		error = 0.00439875299211442
+1000000		result = 3.63524679430054		error = 0.00440893813171669
 
 Calculating the area of a circle with radius r = 0.9:
 Should give 2.54469004940773
 
-1000000		result = 2.54591161717098	error = 0.00146846453403287
+1000000		result = 2.54238594469733	error = 0.00146954516064612
 
 Calculating the three dimensional integral of f(x,y,z) = pi^-3*[(1-cos(x)cos(y)cos(z))^-1]
 Should give 1.3932038765174
 
-1000000		result = 1.38643299887892		error = 0.00602519536381706
+1000000		result = 1.38038231638334		error = 0.00530662846827258
