@@ -42,7 +42,5 @@ public class main {
 		AλIv.print("");
 		if(AλIv.approx(zerovec)) WriteLine("test passed");
 		else WriteLine("test failed");
-		//B.print("\n");
-		//zerovec.print("\n");	
 	}
 }
