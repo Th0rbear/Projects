@@ -9,4 +9,4 @@ the course, which have some weighting for the final grade given in the course. T
 and homeworks are in subdirectories, to these two corresponding parent directories. All programs can be initialized
 by using the command "make", or first using "make clean" and then "make".
 
-The examination project will be in the "exam" folder.
+The examination project can be found in the "exam" folder.
