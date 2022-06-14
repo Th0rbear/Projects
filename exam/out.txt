@@ -1,0 +1,23 @@
+Creating a random real symmetric 4x4 matrix:
+
+      2.74        4.2       3.59       1.55 
+       4.2       6.58       4.14       3.35 
+      3.59       4.14       3.77       4.07 
+      1.55       3.35       4.07       8.78 
+
+Now searching for its eigenvalue and eigenvector
+Using an initial guess on 1 for the eigenvalue we get:
+Eigenvalue λ = 0.838980069335158
+The corresponding eigenvector is:
+
+     0.389     -0.668      0.624     -0.114 
+
+Now testing that the following constraint v^Tv = 1 is fulfilled:
+v^Tv = 1.00000000029155
+test passed
+
+As a last thing we can also test the eigenvalue equation for matrix A, i.e. (A-λI)v = 0
+(A-λI)v:
+
+  3.47e-10   4.78e-10   4.45e-10   4.87e-10 
+test passed
