@@ -12,7 +12,10 @@ which is a function of the vector $\textbf{v}$, that consists of n variables. Th
 $\textbf{v}^{T}\textbf{v}=1$. 
 This function is the one we would like to minimize, to do this we then search for the stationary point with the use of Lagrange multipliers, i.e. using the Lagrangian function:
 $$L(\textbf{v},\lambda) = \textbf{v}^{T}A\textbf{v} - \lambda(\textbf{v}^{T}\textbf{v}-1)$$
-At the stationary point all the partial derivatives of the Lagrangian should be 0, using the variables ${\textbf{v},\lambda}$. For the search of this stationary point we find the root in the n+1 dimensional space $\textbf{x} = (\textbf{v}, \lambda)$ of the n+1 dimensional vector function
+At the stationary point all the partial derivatives of the Lagrangian should be 0, using the variables 
+${\textbf{v},\lambda}$. 
+For the search of this stationary point we find the root in the n+1 dimensional space 
+$\textbf{x} = (\textbf{v}, \lambda)$ of the n+1 dimensional vector function
 $$\textbf{f}(\textbf{x}) = (A\textbf{v} - \lambda \textbf{v}, \textbf{v}^T\textbf{v}-1)$$
 
 To implement this I have used Newton's method for root-finding and the QR Gram-Schmidt decomposition for solving linear equations. These two algorithms are available to look at in homework/root-finding and homework/linear-equations respectively. Other files are also used to get the implementation, these files can be seen in the Makefile.
