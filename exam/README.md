@@ -27,7 +27,9 @@ In the method, the n+1 vector function $\textbf{f}$ is introduced, and this func
 $\textbf{f}(\textbf{x})$. 
 The root-finding routine determines the root of this function by using a backtracking line search, and in the end returns a vector of n+1 dimension, which constitutes the eigenvector components and the eigenvalue 
 $\lambda$ as the last n+1'th component. 
-Due to the constraint $\textbf{v}^T\textbf{v}=1$, the corresponding eigenvector $\textbf{v}$ of the eigenvalue $\lambda$ at the stationary point is normalized.
+Due to the constraint $\textbf{v}^T\textbf{v}=1$, the corresponding eigenvector 
+$\textbf{v}$ of the eigenvalue 
+$\lambda$ at the stationary point is normalized.
 
 The main.cs file contains a main method that tests the above-mentioned implementation. The main method creates a random symmetric real 4x4 matrix and determines its eigenvalue and corresponding eigenvector. To test that the eigenvalue and eigenvector are correct, they should fulfill the eigenvalue equation for the matrix, and the eigenvector should fulfill the constraint. The result of this test is seen in the out.txt file. 
 
