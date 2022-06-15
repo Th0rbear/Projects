@@ -29,7 +29,8 @@ The root-finding routine determines the root of this function by using a backtra
 $\lambda$ as the last n+1'th component. 
 Due to the constraint $\textbf{v}^T\textbf{v}=1$, the corresponding eigenvector 
 $\textbf{v}$ of the eigenvalue 
-$\lambda$ at the stationary point is normalized.
+$\lambda$ 
+at the stationary point is normalized.
 
 The main.cs file contains a main method that tests the above-mentioned implementation. The main method creates a random symmetric real 4x4 matrix and determines its eigenvalue and corresponding eigenvector. To test that the eigenvalue and eigenvector are correct, they should fulfill the eigenvalue equation for the matrix, and the eigenvector should fulfill the constraint. The result of this test is seen in the out.txt file. 
 
