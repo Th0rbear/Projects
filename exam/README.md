@@ -8,7 +8,9 @@ Thorbjørn Madsen
 #### Project description:
 This project revolves around a mathematical concept called constrained optimization, where the problem is to determine the eigenvalue and the corresponding eigenvector of a real symmetric matrix A. Concerning physics and quantum mechanics you often would like to know the groundstate energy of a specific system, and as a method to get an approximate value you could use the variational method. In this case, you want to minimize the energy (the eigenvalue), so that the energy is as close to the groundstate energy as possible. So in our case, we are given a multivariable function 
 $$E(\textbf{v})=\textbf{v}^{T} A \textbf{v}$$ 
-which is a function of the vector $\textbf{v}$, that consists of n variables. The function is subject to the constraint that $\textbf{v}^{T}\textbf{v}=1$. This function is the one we would like to minimize, to do this we then search for the stationary point with the use of Lagrange multipliers, i.e. using the Lagrangian function:
+which is a function of the vector $\textbf{v}$, that consists of n variables. The function is subject to the constraint that 
+$\textbf{v}^{T}\textbf{v}=1$. 
+This function is the one we would like to minimize, to do this we then search for the stationary point with the use of Lagrange multipliers, i.e. using the Lagrangian function:
 $$L(\textbf{v},\lambda) = \textbf{v}^{T}A\textbf{v} - \lambda(\textbf{v}^{T}\textbf{v}-1)$$
 At the stationary point all the partial derivatives of the Lagrangian should be 0, using the variables ${\textbf{v},\lambda}$. For the search of this stationary point we find the root in the n+1 dimensional space $\textbf{x} = (\textbf{v}, \lambda)$ of the n+1 dimensional vector function
 $$\textbf{f}(\textbf{x}) = (A\textbf{v} - \lambda \textbf{v}, \textbf{v}^T\textbf{v}-1)$$
