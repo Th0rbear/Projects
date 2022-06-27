@@ -18,7 +18,7 @@ For the search of this stationary point we find the root in the n+1 dimensional 
 $\textbf{x} = (\textbf{v}, \lambda)$ of the n+1 dimensional vector function
 $$\textbf{f}(\textbf{x}) = (A\textbf{v} - \lambda \textbf{v}, \textbf{v}^T\textbf{v}-1)$$
 
-To implement this I have used Newton's method for root-finding and the QR Gram-Schmidt decomposition for solving linear equations. These two algorithms are available to look at in homework/root-finding and homework/linear-equations respectively. Other files are also used to get the implementation, these files can be seen in the Makefile.
+To implement this I have used Newton's method for root-finding and the QR Gram-Schmidt decomposition for solving linear equations. These two algorithms are available to look at in homework/root-finding and homework/linear-equations respectively. Other files are also used in the implementation, these files can be seen in the Makefile.
 
 Newton's method which was implemented in the roots homework has been modified and is thus called rootsLM.cs. The reason for this is that an analytical expression for the Jacobian matrix of the n+1 dimensional vector function (the function $\textbf{f}$ above) exists, hence this analytical expression has been implemented and is used instead of the numerical finite differences. This change along with some comments on the implementation can be seen in rootsLM.cs
 
